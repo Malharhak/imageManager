@@ -1,6 +1,9 @@
-To use the imageManager :
+#ImageManager
 
-. Create an object containing your images references and url (each image will be then called by its reference) : 
+##How to :
+
+1. Create an object containing your images references and url (each image will be then called by its reference) : 
+	
 	var myImages = {
 
 		"reference" : "url",
@@ -8,13 +11,13 @@ To use the imageManager :
 		"player" : "characters/player.png"
     }
 
-. Fill the imageManager with your images
+2. Fill the imageManager with your images
 	imageManager.pushImages(myImages) 
 
-. Check if the images are loaded :
+3. Check if the images are loaded :
 	imageManager.isLoaded(); // True if loading is finished, else false
 
-. If your images are loaded, use them !
+4. If your images are loaded, use them !
 	imageManager.get('player');
 
-Note that you can access an image's width/height with imageManager.get('image').width;
+*Note that you can access an image's width/height with imageManager.get('image').width*
